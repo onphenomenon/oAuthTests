@@ -37,7 +37,12 @@ module.exports = function(app, express) {
     passport.authenticate('intuit', { failureRedirect: '/login' }),
      function(req, res) {
         console.log("Successful LOGIN YAY!");
-        res.redirect('/');
+        console.log("login req.session ", req.session);
+        console.log("login req.session.passport.user", req.session.passport.user)
+        //save req.session.passport,
+        res.redirect('/#/google');
+        //app.js run http req to server, to fetch a piece of information from session.
+        //get request with ajax call for session.passport piece of information.
     }
   );
 

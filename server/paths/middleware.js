@@ -29,7 +29,6 @@ module.exports = function(app, express) {
   app.use(session(sessionOpts));
 
   console.log(session);
-  console.log(session.Cookie)
 
   app.use(passport.initialize());
   app.use(passport.session());

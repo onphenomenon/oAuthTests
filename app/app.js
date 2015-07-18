@@ -2,11 +2,13 @@ angular.module("oAuth", [
   'googleAuth',
   "factory",
   "ui.router",
-  "ui.bootstrap"
+  "ui.bootstrap",
+  "oauth",
+  "ngStorage"
 ])
-.config(function($httpProvider, $stateProvider, $urlRouterProvider) {
+.config(function($httpProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
 
-
+  // $locationProvider.html5Mode(true).hashPrefix('!');
 
   $urlRouterProvider.otherwise('/');
 

@@ -16,10 +16,19 @@
     <script src="https://apis.google.com/js/client.js"></script>
     <!-- hello.js script -->
     <script src='./lib/hello/dist/hello.all.js'></script>
+    <script src='./lib/hello/dist/linkedin.js'></script>
   </head>
 
   <body ng-app="oAuth">
+      <!-- <div id="login"></div> -->
       <div ui-view="google"></div>
+     <!--  <oauth
+        site="http://oauth-ng-server.herokuapp.com"
+        client-id="a68e74c38cb63ae234d787f52530b7d6"
+        redirect-uri="http://localhost:9000"
+        scope="public">
+      </oauth> -->
+
 
   </body>
      <footer id="main-footer">
@@ -30,6 +39,8 @@
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<!--     <script src="lib/oauth-ng/dist/oauth-ng.js"></script>
+    <script src="lib/ngstorage/ngStorage.js"></script> -->
     <script src="hello.js"></script>
     <script src="/factories/factory.js"></script>
     <script src="/googleAuth/googleAuth.js"></script>
